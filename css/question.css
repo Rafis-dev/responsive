@@ -1,0 +1,137 @@
+.question {
+  position: relative;
+  background-image: url("../images/questions.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.question::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47, 50, 75, 0.85);
+}
+
+.question__container {
+  position: relative;
+  z-index: 2;
+}
+
+.question__title {
+  margin-bottom: 17px;
+}
+
+.question__descr {
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.question__form {
+  max-width: 423px;
+  margin: 0 auto;
+}
+
+.question__input {
+  width: 100%;
+  display: block;
+  border-radius: 50px;
+  border: 1.382px solid var(--main-color);
+  background: transparent;
+  padding: 9px 25px;
+  margin-bottom: 21px;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 22px;
+  line-height: normal;
+}
+
+.question__input:last-of-type {
+  margin-bottom: 50px;
+}
+
+.question__btn {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 11px 38px;
+  background: var(--button-blue);
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+
+.question__agreement {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.question__link {
+  color: #4A76A8;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 1024px) {
+
+  .question__descr {
+    font-size: 20px;
+  }
+
+  .question__btn {
+    margin-bottom: 30px;
+  }
+
+  .question__agreement {
+    font-size: 17px;
+  }
+
+  .question__form {
+    max-width: 377px;
+  }
+
+  .question__input {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .question__title {
+    margin-bottom: 10px;
+  }
+
+  .question__descr {
+    font-size: 12px;
+    margin-bottom: 35px;
+  }
+
+  .question__btn {
+    font-size: 16px;
+    padding: 10px 26px;
+  }
+
+  .question__agreement {
+    font-size: 11px;
+  }
+
+  .question__form {
+    max-width: 100%;
+  }
+
+  .question__input {
+    font-size: 14px;
+    padding: 6px 18px;
+  }
+
+  .question__input:last-of-type {
+    margin-bottom: 45px;
+  }
+}
