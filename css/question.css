@@ -103,6 +103,10 @@
 }
 
 @media (max-width: 580px) {
+  .question {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   .question__title {
     margin-bottom: 10px;

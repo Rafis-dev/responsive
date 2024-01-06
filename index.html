@@ -14,7 +14,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,18 +21,17 @@
 <body>
 
   <header class="header">
-    <div class="container header__container">
+    <div class="container">
 
       <div class="header__wrapper">
-        <img class="header__logo" src="images/logo.svg" alt="логотип">
+        <img class="logo" src="images/logo.svg" alt="логотип">
 
-        <a class="phone-box" href="tel:+79625561234">
-          <span class="phone-box__num">
+        <div class="phone-box">
+          <a class="phone-box__num" href="tel:+79625561234">
             +7 (962) 556 - 1234
-          </span>
-          <span class="phone-box__text">Перезвоните мне</span>
-          <img class="phone-box__icon" src="images/phone-icon.svg" alt="иконка телефона">
-        </a>
+          </a>
+          <a class="phone-box__text" href="#question">Перезвоните мне</a>
+        </div>
       </div>
 
     </div>
@@ -50,11 +48,11 @@
           сгенерировать несколько абзацев
           более менее осмысленного текста рыбы на русском языке, а начинающему.</p>
 
-        <a class="main-section__btn" href="#">Подробнее</a>
+        <a class="main-section__btn" href="#advantages">Подробнее</a>
       </div>
     </section>
 
-    <section class="advantages section">
+    <section class="advantages section" id="advantages">
       <div class="container">
         <h2 class="section__title advantages__title">
           Уникальный заголовок для преимущества компании
@@ -69,7 +67,6 @@
           осмысленного
           текста рыбы на русском языке, а начинающему оратору отточить.
         </p>
-
 
         <ul class="advantages__list">
 
@@ -92,64 +89,13 @@
             <span class="advantages__num">4</span>
             <p class="advantages__text">Четвертое целевое преимущество</p>
           </li>
+
         </ul>
-
-
-        <div class="swiper">
-          <ul class="swiper-wrapper">
-
-            <li class="swiper-slide">
-              <div class="swiper-slide__wrapper">
-                <span class="advantages__num">1</span>
-                <p class="advantages__text">Первое целевое преимущество</p>
-              </div>
-            </li>
-
-            <li class="swiper-slide">
-              <div class="swiper-slide__wrapper">
-                <span class="advantages__num">2</span>
-                <p class="advantages__text">Второе целевое преимущество</p>
-              </div>
-            </li>
-
-            <li class="swiper-slide">
-              <div class="swiper-slide__wrapper">
-                <span class="advantages__num">3</span>
-                <p class="advantages__text">Третье целевое преимущество</p>
-              </div>
-            </li>
-
-            <li class="swiper-slide">
-              <div class="swiper-slide__wrapper">
-                <span class="advantages__num">4</span>
-                <p class="advantages__text">Четвертое целевое преимущество</p>
-              </div>
-            </li>
-          </ul>
-          <div class="swiper-button-prev">
-            <div class="swiper-button__wrapper">
-              <svg class="swiper-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"
-                fill="currentColor">
-                <path
-                  d="M0.344121 7.29289C-0.0464033 7.68342 -0.046404 8.31658 0.34412 8.7071L6.70807 15.0711C7.0986 15.4616 7.73176 15.4616 8.12229 15.0711C8.51281 14.6806 8.51281 14.0474 8.12229 13.6569L2.46544 8L8.1223 2.34315C8.51283 1.95263 8.51283 1.31946 8.1223 0.928939C7.73178 0.538414 7.09861 0.538413 6.70809 0.928937L0.344121 7.29289ZM2.05469 7L1.05123 7L1.05123 9L2.05469 9L2.05469 7Z" />
-              </svg>
-            </div>
-          </div>
-          <div class="swiper-button-next">
-            <div class="swiper-button__wrapper">
-              <svg class="swiper-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"
-                fill="currentColor">
-                <path class="swiper-arrow__path"
-                  d="M8.65588 8.70711C9.0464 8.31658 9.0464 7.68342 8.65588 7.2929L2.29193 0.928927C1.9014 0.538403 1.26824 0.538402 0.877712 0.928926C0.487188 1.31945 0.487187 1.95261 0.877711 2.34314L6.53456 8L0.877699 13.6568C0.487174 14.0474 0.487174 14.6805 0.877697 15.0711C1.26822 15.4616 1.90139 15.4616 2.29191 15.0711L8.65588 8.70711ZM6.94531 9L7.94877 9L7.94877 7L6.94531 7L6.94531 9Z" />
-              </svg>
-            </div>
-          </div>
-        </div>
 
       </div>
     </section>
 
-    <section class="question section">
+    <section class="question section" id="question">
       <div class="container question__container">
         <h2 class="section__title question__title">Остались вопросы?</h2>
 
@@ -177,7 +123,7 @@
       <div class="footer__content">
 
         <div class="footer__copyright">
-          <img class="footer__logo" src="images/logo.svg" alt="логотип">
+          <img class="logo" src="images/logo.svg" alt="логотип">
 
           <div class="footer__copyright-content">
             <p class="footer__copyright-text">© 2022 XXXcompany.</p>
@@ -188,19 +134,17 @@
 
         <p class="footer__author">Сделано Ивановым Иваном</p>
 
-        <a class="phone-box" href="tel:+79625561234">
-          <span class="phone-box__num">
+        <div class="phone-box">
+          <a class="phone-box__num" href="tel:+79625561234">
             +7 (962) 556 - 1234
-          </span>
-          <span class="phone-box__text">Перезвоните мне</span>
-          <img class="phone-box__icon" src="images/phone-icon.svg" alt="иконка телефона">
-        </a>
+          </a>
+          <a class="phone-box__text" href="#question">Перезвоните мне</a>
+        </div>
 
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+
 </body>
 
 </html>
