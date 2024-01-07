@@ -1,10 +1,11 @@
 .main-section {
   position: relative;
   background-image: url("../images/main-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
   text-align: center;
-  padding-top: 228px;
+  padding-top: 227px;
   padding-bottom: 120px;
 }
 
@@ -30,14 +31,18 @@
   font-size: 52px;
   font-weight: 900;
   line-height: normal;
-  margin-bottom: 35px;
+  max-width: 990px;
+  margin: 0 auto;
+  margin-bottom: 31px;
 }
 
 .main-section__descr {
   opacity: 0.75;
   font-size: 22px;
   line-height: 140.625%;
+  margin: 0 auto;
   margin-bottom: 90px;
+  max-width: 960px;
 }
 
 .main-section__btn {
@@ -52,6 +57,7 @@
   box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.30);
 }
 
+
 @media (max-width: 1024px) {
 
   .main-section {
@@ -62,23 +68,25 @@
   .main-section__title {
     font-size: 40px;
     margin-bottom: 27px;
+    max-width: 780px;
   }
 
   .main-section__descr {
     font-size: 18px;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
+    max-width: 754px;
   }
 }
 
 @media (max-width: 580px) {
   .main-section {
-    padding-top: 110px;
+    padding-top: 108px;
     padding-bottom: 65px;
   }
 
   .main-section__title {
     font-size: 20px;
-    margin-bottom: 23px;
+    margin-bottom: 25px
   }
 
   .main-section__descr {
@@ -88,6 +96,6 @@
 
   .main-section__btn {
     font-size: 16px;
-    padding: 9px 29px;
+    padding: 9px 37px;
   }
 }

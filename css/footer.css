@@ -26,6 +26,11 @@
 
 
 @media (max-width: 1024px) {
+  .footer {
+    padding: 39px 0 50px 0;
+    background-color: #2F324B;
+  }
+
   .footer__author {
     opacity: .5;
   }
@@ -51,10 +56,14 @@
 }
 
 @media (max-width: 580px) {
-
   .footer {
     background: linear-gradient(#2F324B 63%, #2A2C3F 0);
   }
+
+  .footer__copyright {
+    padding: 24px 0;
+  }
+
 
   .footer__copyright-text {
     font-size: 8px;

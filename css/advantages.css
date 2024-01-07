@@ -9,21 +9,14 @@
 }
 
 .advantages__subtitle {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 23px;
 }
 
-.advantages__subtitle::before {
-  content: "";
-  display: block;
-  width: 43px;
-  height: 2px;
-  background-color: var(--secondary-color);
-}
-
+.advantages__subtitle::before,
 .advantages__subtitle::after {
   content: "";
   display: block;
@@ -37,7 +30,7 @@
   line-height: 140.625%;
   max-width: 724px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 59px;
 }
 
 .advantages__list {
@@ -45,7 +38,7 @@
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
-
+  counter-reset: count 0;
 }
 
 .advantages__item {
@@ -55,16 +48,21 @@
   align-items: center;
 }
 
-.advantages__num {
-  display: inline-block;
+.advantages__item::before {
+  content: counter(count);
+  counter-increment: count;
   color: #FFF;
   background-color: var(--advantages-blue);
   font-size: 57px;
   font-weight: 500;
   line-height: 100%;
-  padding: 33px 44px;
   border-radius: 50%;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+  min-width: 122px;
+  min-height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages__text {
@@ -82,24 +80,31 @@
   }
 
   .advantages__subtitle {
-    margin-bottom: 33px;
+    margin-bottom: 29px;
   }
 
   .advantages__descr {
     font-size: 16px;
+    max-width: 666px;
   }
 
   .advantages__item {
     flex-basis: 180px;
   }
 
+  .advantages__item::before {
+    margin-bottom: 26px;
+  }
+
   .advantages__text {
     font-size: 18px;
   }
 
-  .advantages__num {
+
+  .advantages__item::before {
     font-size: 52px;
-    padding: 22px 31px;
+    min-width: 104px;
+    min-height: 104px;
   }
 }
 
@@ -118,12 +123,12 @@
 @media (max-width: 580px) {
 
   .advantages {
-    padding-top: 30px;
+    padding-top: 31px;
     padding-bottom: 60px;
   }
 
   .advantages__title {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
   }
 
   .advantages__list {
@@ -131,7 +136,12 @@
   }
 
   .advantages__subtitle {
-    margin-bottom: 26px;
+    margin-bottom: 29px;
+  }
+
+  .advantages__subtitle::before,
+  .advantages__subtitle::after {
+    width: 19px;
   }
 
   .advantages__descr {
@@ -139,8 +149,8 @@
     margin-bottom: 40px;
   }
 
-  /* .advantages__item {
-    flex-basis: 166px;
-  } */
+  .advantages__item::before {
+    margin-bottom: 27px;
+  }
 
 }
