@@ -82,6 +82,8 @@
   .main-section {
     padding-top: 108px;
     padding-bottom: 65px;
+    background-size: cover;
+    background-position: left 15% top 0;
   }
 
   .main-section__title {
