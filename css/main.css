@@ -1,12 +1,12 @@
 .main-section {
   position: relative;
   background-image: url("../images/main-bg.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   text-align: center;
   padding-top: 227px;
-  padding-bottom: 120px;
+  padding-bottom: 119px;
 }
 
 .main-section::before {
@@ -62,7 +62,8 @@
 
   .main-section {
     padding-top: 156px;
-    padding-bottom: 70px;
+    padding-bottom: 71px;
+    background-image: url("../images/main-bg-1024.jpg");
   }
 
   .main-section__title {
@@ -81,9 +82,10 @@
 @media (max-width: 580px) {
   .main-section {
     padding-top: 108px;
-    padding-bottom: 65px;
-    background-size: cover;
-    background-position: left 15% top 0;
+    padding-bottom: 67px;
+    background-image: url("../images/main-bg-mobile.jpg");
+    background-position: center;
+
   }
 
   .main-section__title {
@@ -94,7 +96,14 @@
   .main-section__descr {
     font-size: 14px;
     margin-bottom: 54px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
+
 
   .main-section__btn {
     font-size: 16px;

@@ -2,6 +2,7 @@
   color: var(--secondary-color);
   text-align: center;
   background: #F9F9F9;
+  padding-bottom: 72px;
 }
 
 .advantages__title {
@@ -123,8 +124,8 @@
 @media (max-width: 580px) {
 
   .advantages {
-    padding-top: 31px;
-    padding-bottom: 60px;
+    padding-top: 29px;
+    padding-bottom: 64px;
   }
 
   .advantages__title {
